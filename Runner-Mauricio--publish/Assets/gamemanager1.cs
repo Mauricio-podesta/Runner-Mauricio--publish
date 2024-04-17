@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -50,7 +51,8 @@ public class gamemanager1 : MonoBehaviour
     }
     void Update()
     {
-        score = score + 1 * Time.deltaTime;
-        ScoreTXT.text = "Score:" + score.ToString("F2");
+        score = score + 10 * Time.deltaTime;
+  
+        ScoreTXT.text = "Score:" + score.ToString("F0");
     }
 }

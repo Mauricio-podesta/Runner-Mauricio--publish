@@ -26,8 +26,8 @@ public class LoseMenssage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score = score + 1 * Time.deltaTime;
-        ScoreTXT.text = score.ToString("F2");
+        score = score + 10 * Time.deltaTime;
+        ScoreTXT.text = "" + score.ToString("F0") ;
         if (Lose)
             if (Input.GetKeyUp(KeyCode.R)) {
 
